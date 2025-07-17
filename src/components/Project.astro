@@ -1,0 +1,75 @@
+---
+import video_command_runner from '../assets/video/video_command_Runner.mp4';
+import video_radio_taxi from '../assets/video/video_radio_taxi.mp4';
+import video_gestiona_taxi from '../assets/video/video_gestiona_taxi_2025.mp4';
+---
+
+
+
+<section id="proyects" class="container mx-auto px-4 py-6 flex flex-col md:flex-row md:flex-wrap md:justify-between gap-8 bg-blue-100 dark:bg-gray-800 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-400">
+  <h2 class="text-4xl font-bold mb-10 mt-10 container mx-auto"><i class="bi bi-code-slash"></i> Proyectos</h2>
+  
+  <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    
+    <video class="rounded-t-lg w-full" src={video_command_runner} autoplay muted></video>
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Command Runner FX
+      </h2>
+      <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+        Aplicación para ejecutar comandos con interfaz gráfica para Windows.
+      </p>
+      <nav class="flex flex-wrap gap-2" aria-label="Enlaces de Command Runner FX">
+        <a href="#" aria-label="Ver código Command Runner FX"
+          class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+          Code
+          <svg class="w-4 h-4 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a>
+        <a href="#" aria-label="Ver código Command Runner FX"
+        class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+          Preview
+          <svg class="w-4 h-4 ms-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </article>
+
+  <!-- === Repite igual para cada card === -->
+
+  <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <video class="rounded-t-lg w-full" src={video_radio_taxi} autoplay muted  ></video>
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Radio Taxi Poniente
+      </h2>
+      <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+        Aplicación de comunicación por voz en tiempo real.
+      </p>
+      <nav class="flex flex-wrap gap-2" aria-label="Enlaces de Radio Taxi Poniente">
+        <!-- botones aquí -->
+      </nav>
+    </div>
+  </article>
+
+  <article class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <video class="rounded-t-lg w-full" src={video_gestiona_taxi} autoplay muted ></video>
+    <div class="p-5">
+      <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Gestiona Taxi 2025
+      </h2>
+      <p class="mb-4 font-normal text-gray-700 dark:text-gray-400">
+        Agenda para taxistas, introduciendo servicios y gastos. La app calcula beneficios, comisiones, etc.
+      </p>
+      <nav class="flex flex-wrap gap-2" aria-label="Enlaces de Gestiona Taxi 2025">
+        <!-- botones aquí -->
+      </nav>
+    </div>
+  </article>
+</section>
+

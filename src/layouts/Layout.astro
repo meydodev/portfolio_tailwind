@@ -1,22 +1,46 @@
+---
+import "../styles/global.css";
+import 'animate.css'
+---
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!--Libreria de animaciones css -->
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Abraham Mellado | Portfolio</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body  data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-offset="70"
+    tabindex="0">
+    
+    <slot />
+  </body>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+
+  <script is:inline>
+    window.addEventListener("DOMContentLoaded", () => {
+      if (typeof AOS !== "undefined") {
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      }
+    });
+  </script>
+</html>
