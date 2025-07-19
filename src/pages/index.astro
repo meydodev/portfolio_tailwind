@@ -6,15 +6,18 @@ import Experience from '../components/Experience.astro';
 import Project from '../components/Project.astro';
 import About from '../components/About.astro';
 import Contact from '../components/Contact.astro';
+import Tetris from '../components/Tetris.astro';
 ---
 
 <Layout>
 	<Header />
-	<main class="min-h-screen bg-white text-black  dark:bg-[radial-gradient(ellipse_at_center,_#9333ea,_#1e1b4b,_#000)] dark:text-white transition-colors duration-300">
+	<main class="min-h-screen bg-[radial-gradient(ellipse_at_center,_#ffffff,_#e9d5ff,_#ffffff)]  text-black  dark:bg-[radial-gradient(ellipse_at_center,_#9333ea,_#1e1b4b,_#000)] dark:text-white transition-colors duration-300">
 	<Hero />
 	<Experience />
-	<Project />
+	<Project  />
+		<Tetris/>
 	<About />
 	<Contact />
+
 	</main>
 </Layout>

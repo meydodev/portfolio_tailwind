@@ -24,3 +24,6 @@ html {
   font-size: 3rem;
 }
 
+button {
+  touch-action: manipulation;
+}
