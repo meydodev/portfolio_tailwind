@@ -49,16 +49,27 @@ window.addEventListener('scroll', () => {
       }
     }
 
-    // Aplica modo guardado
+    // Establece modo oscuro por defecto si no hay preferencia guardada
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'dark');
+    }
+
+    // Aplica modo guardado (oscuro o claro)
     if (localStorage.getItem('theme') === 'dark') {
       html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
     }
+
     updateIcon();
 
     if (btn) {
       btn.addEventListener('click', () => {
         html.classList.toggle('dark');
-        localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        localStorage.setItem(
+          'theme',
+          html.classList.contains('dark') ? 'dark' : 'light'
+        );
         updateIcon();
         console.log('Theme toggled. Now:', html.classList.contains('dark') ? 'dark' : 'light');
       });

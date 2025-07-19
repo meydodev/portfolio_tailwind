@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.4.1",
     "@tailwindcss/vite": "^4.1.11",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
