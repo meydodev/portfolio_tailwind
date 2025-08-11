@@ -1,14 +1,18 @@
-<nav id="mainNav" aria-label="Menú principal de navegación"
-  class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-transparent dark:bg-transparent text-black dark:text-white px-4 py-2 rounded-full flex items-center space-x-3 z-50 transition-all duration-300 text-[12px] sm:text-xs md:text-sm lg:text-xl whitespace-nowrap animate__animated animate__fadeInDown">
+<nav id="mainNav" aria-label="Menú principal de navegación" role="navigation" 
+  class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-transparent dark:bg-transparent text-black dark:text-white px-4 py-2 rounded-full flex items-center space-x-3 z-50 transition-all duration-300 text-[9px] sm:text-xs md:text-sm lg:text-xl whitespace-nowrap animate__animated animate__fadeInDown">
   <ul class="flex items-center space-x-3 font-semibold text-gray-700 dark:text-gray-300">
-    <li><a href="#experience" class="hover:text-blue-500">Experiencia</a></li>
-    <li><a href="#proyects" class="hover:text-blue-500 ">Proyectos</a></li>
-    <li><a href="#about" class="hover:text-blue-500 ">Sobre mí</a></li>
-    <li><a href="#contact" class="hover:text-blue-500 ">Contacto</a></li>
+    <li><a href="#experience" class="hover:text-blue-500" title="ver sección de experiencia profesional">Experiencia</a></li>
+    <li><a href="#proyects" class="hover:text-blue-500" title="ver sección de proyectos">Proyectos</a></li>
+    <li><a href="#about" class="hover:text-blue-500 " title="ver sección de sobre mi">Sobre mí</a></li>
+    <li><a href="#education" class="hover:text-blue-500 " title="ver sección de formacion">Formación</a></li>
+    <li><a href="#contact" class="hover:text-blue-500 " title="ver sección de contacto">Contacto</a></li>
   </ul>
-  <button id="toggleDark" class="ml-2 text-lg text-blue-500 cursor-pointer hover:text-blue-700 transition-colors duration-300" aria-label="Cambiar modo oscuro o claro">
+  <button id="toggleDark" 
+  class="ml-2 text-sm sm:text-base md:text-lg text-blue-500 cursor-pointer hover:text-blue-700 transition-colors duration-300" 
+  aria-label="Cambiar modo oscuro o claro">
   <i id="themeIcon" class="bi"></i>
 </button>
+
 </nav>
 
 {/*Script para cambiar el color de fondo del nav al hacer scroll */}
